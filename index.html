@@ -1,110 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2048</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/board.css" />
-  <link rel="stylesheet" href="css/tiles.css" />
-  <link rel="stylesheet" href="css/ui.css" />
-  <link rel="stylesheet" href="css/sandbox.css" />
-</head>
-<body>
-
-  <div class="contenedor-juego">
-
-    <div class="encabezado">
-      <h1 class="titulo">2048</h1>
-
-      <div class="barra-info">
-
-        <!-- Puntajes — ocultos en sandbox -->
-        <div class="contenedor-puntajes" id="panel-puntajes">
-          <div class="grupo-puntajes">
-            <div class="item-puntaje">
-              <div class="etiqueta-puntaje">PUNTAJE</div>
-              <div class="valor-puntaje" id="puntaje">0</div>
-            </div>
-            <div class="item-puntaje">
-              <div class="etiqueta-puntaje">MEJOR</div>
-              <div class="valor-puntaje" id="mejor">0</div>
-            </div>
-            <div class="item-puntaje">
-              <div class="etiqueta-puntaje">FICHAS</div>
-              <div class="valor-puntaje" id="fichas">0</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Botones -->
-        <div class="contenedor-botones">
-          <button class="btn-juego" id="btn-deshacer" disabled>↶ DESHACER</button>
-          <button class="btn-juego" id="btn-reiniciar">🔄 REINICIAR</button>
-          <button class="btn-juego" id="btn-sonido">🔊 SONIDO</button>
-          <button class="btn-juego" id="btn-sandbox">⚗ SANDBOX</button>
-        </div>
-
-        <!-- Slider pasos -->
-        <div class="controles-extra">
-          <div class="control-deshacer">
-            <label for="rango-deshacer">Pasos a deshacer:</label>
-            <input id="rango-deshacer" type="range" min="1" max="12" value="6" />
-            <span id="valor-deshacer">6</span>
-          </div>
-        </div>
-
-      </div><!-- /.barra-info -->
-    </div><!-- /.encabezado -->
-
-    <!-- Tablero -->
-    <div class="tablero-juego" id="tablero-juego">
-      <div class="celda"></div><div class="celda"></div><div class="celda"></div><div class="celda"></div>
-      <div class="celda"></div><div class="celda"></div><div class="celda"></div><div class="celda"></div>
-      <div class="celda"></div><div class="celda"></div><div class="celda"></div><div class="celda"></div>
-      <div class="celda"></div><div class="celda"></div><div class="celda"></div><div class="celda"></div>
-
-      <div class="fin-juego" id="fin-juego">
-        <h2 id="texto-superior">¡Fin del juego!</h2>
-        <p  id="mensaje-fin">Puntaje final: <span id="puntaje-final">0</span></p>
-        <div class="botones-fin">
-          <button class="btn-juego" id="btn-continuar" style="display:none">Deshacer</button>
-          <button class="btn-juego" id="btn-reiniciar2">JUGAR DE NUEVO</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Logo — columna derecha arriba (donde era Meli) -->
-    <div id="logo-wrap">
-      <img src="favicon.svg" alt="logo" id="logo-tablero" />
-    </div>
-
-    <!-- Top 10 scores — siempre visible, oculto en sandbox -->
-    <div id="scores-wrap">
-      <div id="scores-titulo">
-        <h3>🏆 Top 10 partidas</h3>
-      </div>
-      <div id="scores-lista">
-        <ol id="scores-ol"></ol>
-      </div>
-    </div>
-
-    <!-- Panel sandbox — oculto por defecto, en PC va a col 3 -->
-    <div class="sandbox-panel" id="sandbox-panel">
-      <div class="sandbox-label">⚗ AGREGAR FICHA</div>
-      <div class="sandbox-botones">
-        <button class="btn-juego btn-ficha" data-val="512">512</button>
-        <button class="btn-juego btn-ficha" data-val="1024">1024</button>
-        <button class="btn-juego btn-ficha" data-val="2048">2048</button>
-        <button class="btn-juego btn-ficha" data-val="4096">4096</button>
-      </div>
-    </div>
-
-  </div><!-- /.contenedor-juego -->
-
-  <script src="js/game.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/sandbox.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="theme-color" content="#12141d" />
+    <meta name="description" content="2048 Petal: el clásico 2048 con pétalos y girasoles." />
+    <title>2048 Petal</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
