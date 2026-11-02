@@ -1,5 +1,5 @@
-import { HelpCircle, Sparkles, Volume2, VolumeX } from 'lucide-react';
-import { DaisyPetalSVG } from './FlowerIcons';
+import { HelpCircle, Volume2, VolumeX } from 'lucide-react';
+import Brand from './Brand';
 
 interface HeaderProps {
   score: number;
@@ -18,20 +18,7 @@ export default function Header({
 }: HeaderProps) {
   return (
     <header className="relative z-10 w-full max-w-6xl mx-auto px-4 pt-5 pb-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-dashed border-slate-700/60">
-      <div className="flex items-center gap-3">
-        <div className="relative p-2 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl shadow-lg border-2 border-dashed border-amber-200 flex items-center justify-center">
-          <DaisyPetalSVG className="w-8 h-8 text-white animate-spin-slow" />
-        </div>
-        <div>
-          <h1 className="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-200 bg-clip-text text-transparent">
-            2048 Petal
-          </h1>
-          <p className="text-xs text-slate-400 flex items-center gap-1 font-medium">
-            <span>Pétalos &amp; Girasoles</span>
-            <Sparkles className="w-3.5 h-3.5 text-amber-400 inline" />
-          </p>
-        </div>
-      </div>
+      <Brand />
 
       <div className="flex items-center gap-3">
         <div className="bg-slate-900/80 border border-dashed border-amber-500/40 rounded-2xl px-4 py-2 text-center min-w-[110px] shadow-inner backdrop-blur-md">

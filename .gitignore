@@ -1,0 +1,7 @@
+node_modules
+*.log
+.DS_Store
+.vite
+# docs/ SÍ se sube a propósito: docs/index.html es el juego ya compilado
+# (se abre localmente y sirve como respaldo para GitHub Pages).
+.petal-update

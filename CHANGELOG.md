@@ -2,11 +2,18 @@
 
 ## 2.0.0
 
+### Nuevo
+- **Tutorial en página completa** (`#tutorial`) con carrusel de 13 pasos: introducción, 9 mini-tableros que enseñan la estrategia de la esquina, demo interactiva del slider de deshacer y guía de controles. Incluye panel de consejos y mascota, navegación con flechas/deslizar y botón para volver al juego sin perder la partida.
+- Atajos de teclado: `U` / `Ctrl + Z` para deshacer y `M` para el sonido.
+- Despliegue automático a **GitHub Pages** (`.github/workflows/deploy.yml`) y respaldo con `docs/`.
+- Script `actualizar.sh` para compilar, hacer commit y subir al repo.
+- README con banner y botones hacia la página del juego.
+
 ### Arquitectura
 - El archivo único `App.tsx` se separó en módulos: lógica pura (`game/`), hooks, utilidades (`lib/`) y componentes.
 - Estado del juego movido a un `useReducer`; el sonido y el guardado se disparan como efectos.
 - Proyecto con Vite + Tailwind CSS compilado (ya no depende de un CDN ni de un `<style>` embebido).
-- Build en un solo archivo (`dist/index.html`) que se abre localmente sin servidor.
+- Build en un solo archivo (`docs/index.html`) que se abre localmente sin servidor.
 
 ### Correcciones
 - Mover el slider de "Max Deshacer" ya no reinicia la partida.
@@ -18,4 +25,4 @@
 - Deshacer ya no repite la animación de aparición/fusión en las fichas restauradas.
 
 ### Sin cambios
-- Diseño, colores, animaciones, reglas, tutorial y claves de `localStorage`.
+- Diseño, colores, animaciones, reglas y claves de `localStorage`.

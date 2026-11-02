@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" role="img" aria-label="2048 Petal">
+  <defs>
+    <linearGradient id="t" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FCD34D"/>
+      <stop offset="0.5" stop-color="#FACC15"/>
+      <stop offset="1" stop-color="#FDE68A"/>
+    </linearGradient>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBBF24"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="260" rx="28" fill="#12141D"/>
+  <rect x="8" y="8" width="884" height="244" rx="22" fill="none" stroke="#F59E0B" stroke-opacity="0.45" stroke-width="2" stroke-dasharray="9 8"/>
+  <g opacity="0.22">
+    <g transform="translate(40 150) scale(0.5)"><g fill="#FFFFFF"><ellipse cx="50" cy="18" rx="14" ry="22"/><ellipse cx="50" cy="82" rx="14" ry="22"/><ellipse cx="18" cy="50" rx="22" ry="14"/><ellipse cx="82" cy="50" rx="22" ry="14"/><ellipse cx="27" cy="27" rx="14" ry="22" transform="rotate(-45 27 27)"/><ellipse cx="73" cy="73" rx="14" ry="22" transform="rotate(-45 73 73)"/><ellipse cx="27" cy="73" rx="14" ry="22" transform="rotate(45 27 73)"/><ellipse cx="73" cy="27" rx="14" ry="22" transform="rotate(45 73 27)"/></g><circle cx="50" cy="50" r="18" fill="#D97706"/><circle cx="50" cy="50" r="15" fill="#F59E0B"/><circle cx="50" cy="50" r="12" fill="#FBBF24"/><circle cx="46" cy="46" r="4" fill="#FEF3C7" opacity="0.8"/></g>
+    <g transform="translate(780 20) scale(0.6)"><g fill="#FFFFFF"><ellipse cx="50" cy="18" rx="14" ry="22"/><ellipse cx="50" cy="82" rx="14" ry="22"/><ellipse cx="18" cy="50" rx="22" ry="14"/><ellipse cx="82" cy="50" rx="22" ry="14"/><ellipse cx="27" cy="27" rx="14" ry="22" transform="rotate(-45 27 27)"/><ellipse cx="73" cy="73" rx="14" ry="22" transform="rotate(-45 73 73)"/><ellipse cx="27" cy="73" rx="14" ry="22" transform="rotate(45 27 73)"/><ellipse cx="73" cy="27" rx="14" ry="22" transform="rotate(45 73 27)"/></g><circle cx="50" cy="50" r="18" fill="#D97706"/><circle cx="50" cy="50" r="15" fill="#F59E0B"/><circle cx="50" cy="50" r="12" fill="#FBBF24"/><circle cx="46" cy="46" r="4" fill="#FEF3C7" opacity="0.8"/></g>
+    <g transform="translate(700 160) scale(0.4)"><g fill="#FFFFFF"><ellipse cx="50" cy="18" rx="14" ry="22"/><ellipse cx="50" cy="82" rx="14" ry="22"/><ellipse cx="18" cy="50" rx="22" ry="14"/><ellipse cx="82" cy="50" rx="22" ry="14"/><ellipse cx="27" cy="27" rx="14" ry="22" transform="rotate(-45 27 27)"/><ellipse cx="73" cy="73" rx="14" ry="22" transform="rotate(-45 73 73)"/><ellipse cx="27" cy="73" rx="14" ry="22" transform="rotate(45 27 73)"/><ellipse cx="73" cy="27" rx="14" ry="22" transform="rotate(45 73 27)"/></g><circle cx="50" cy="50" r="18" fill="#D97706"/><circle cx="50" cy="50" r="15" fill="#F59E0B"/><circle cx="50" cy="50" r="12" fill="#FBBF24"/><circle cx="46" cy="46" r="4" fill="#FEF3C7" opacity="0.8"/></g>
+    <g transform="translate(130 20) scale(0.35)"><g fill="#FFFFFF"><ellipse cx="50" cy="18" rx="14" ry="22"/><ellipse cx="50" cy="82" rx="14" ry="22"/><ellipse cx="18" cy="50" rx="22" ry="14"/><ellipse cx="82" cy="50" rx="22" ry="14"/><ellipse cx="27" cy="27" rx="14" ry="22" transform="rotate(-45 27 27)"/><ellipse cx="73" cy="73" rx="14" ry="22" transform="rotate(-45 73 73)"/><ellipse cx="27" cy="73" rx="14" ry="22" transform="rotate(45 27 73)"/><ellipse cx="73" cy="27" rx="14" ry="22" transform="rotate(45 73 27)"/></g><circle cx="50" cy="50" r="18" fill="#D97706"/><circle cx="50" cy="50" r="15" fill="#F59E0B"/><circle cx="50" cy="50" r="12" fill="#FBBF24"/><circle cx="46" cy="46" r="4" fill="#FEF3C7" opacity="0.8"/></g>
+  </g>
+  <rect x="250" y="62" width="96" height="96" rx="26" fill="url(#b)" stroke="#FDE68A" stroke-width="3" stroke-dasharray="8 6"/>
+  <g transform="translate(262 74) scale(0.72)"><g fill="#FFFFFF"><ellipse cx="50" cy="18" rx="14" ry="22"/><ellipse cx="50" cy="82" rx="14" ry="22"/><ellipse cx="18" cy="50" rx="22" ry="14"/><ellipse cx="82" cy="50" rx="22" ry="14"/><ellipse cx="27" cy="27" rx="14" ry="22" transform="rotate(-45 27 27)"/><ellipse cx="73" cy="73" rx="14" ry="22" transform="rotate(-45 73 73)"/><ellipse cx="27" cy="73" rx="14" ry="22" transform="rotate(45 27 73)"/><ellipse cx="73" cy="27" rx="14" ry="22" transform="rotate(45 73 27)"/></g><circle cx="50" cy="50" r="18" fill="#D97706"/><circle cx="50" cy="50" r="15" fill="#F59E0B"/><circle cx="50" cy="50" r="12" fill="#FBBF24"/><circle cx="46" cy="46" r="4" fill="#FEF3C7" opacity="0.8"/></g>
+  <text x="372" y="125" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="62" font-weight="800" fill="url(#t)">2048 Petal</text>
+  <text x="375" y="160" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="600" fill="#94A3B8">Pétalos &amp; Girasoles</text>
+  <g font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="800">
+    <rect x="270" y="188" width="48" height="48" rx="12" fill="#F8FAFC"/><text x="294" y="222" text-anchor="middle" fill="#1E293B">2</text>
+    <rect x="326" y="188" width="48" height="48" rx="12" fill="#FEF3C7"/><text x="350" y="222" text-anchor="middle" fill="#78350F">4</text>
+    <rect x="382" y="188" width="48" height="48" rx="12" fill="#FED7AA"/><text x="406" y="222" text-anchor="middle" fill="#431407">8</text>
+    <rect x="438" y="188" width="48" height="48" rx="12" fill="#FB923C"/><text x="462" y="222" text-anchor="middle" fill="#FFFFFF">32</text>
+    <rect x="494" y="188" width="48" height="48" rx="12" fill="#F43F5E"/><text x="518" y="222" text-anchor="middle" fill="#FFFFFF" font-size="24">512</text>
+    <rect x="550" y="188" width="80" height="48" rx="12" fill="url(#b)"/><text x="590" y="222" text-anchor="middle" fill="#FFFFFF" font-size="26">2048</text>
+  </g>
+</svg>

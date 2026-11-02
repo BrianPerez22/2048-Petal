@@ -16,13 +16,37 @@ const KEY_MAP: Record<string, Direction> = {
   D: 'RIGHT',
 };
 
-export function useKeyboard(onMove: (direction: Direction) => void, enabled = true): void {
+interface KeyboardHandlers {
+  onMove: (direction: Direction) => void;
+  onUndo: () => void;
+  onToggleSound: () => void;
+}
+
+export function useKeyboard({ onMove, onUndo, onToggleSound }: KeyboardHandlers, enabled = true): void {
   useEffect(() => {
     if (!enabled) return;
 
     const handler = (e: KeyboardEvent) => {
-      // No interferir con atajos del navegador (Ctrl+S, Cmd+R, etc.)
+      // Ctrl/Cmd+Z = deshacer
+      if ((e.ctrlKey || e.metaKey) && !e.altKey && (e.key === 'z' || e.key === 'Z')) {
+        e.preventDefault();
+        onUndo();
+        return;
+      }
+      // No interferir con otros atajos del navegador (Ctrl+S, Cmd+R, etc.)
       if (e.ctrlKey || e.metaKey || e.altKey) return;
+
+      if (e.key === 'u' || e.key === 'U') {
+        e.preventDefault();
+        onUndo();
+        return;
+      }
+      if (e.key === 'm' || e.key === 'M') {
+        e.preventDefault();
+        onToggleSound();
+        return;
+      }
+
       const direction = KEY_MAP[e.key];
       if (!direction) return;
       e.preventDefault();
@@ -31,5 +55,5 @@ export function useKeyboard(onMove: (direction: Direction) => void, enabled = tr
 
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [onMove, enabled]);
+  }, [onMove, onUndo, onToggleSound, enabled]);
 }
