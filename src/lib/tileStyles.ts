@@ -46,3 +46,14 @@ export const getTileStyle = (value: number, isMerged?: boolean): string => {
 
   return `${base} ${mergeGlow}`;
 };
+
+/**
+ * Tamaño de letra fluido según los dígitos de la ficha.
+ * Usa clamp() con vw para que el número escale con el tablero en cualquier pantalla
+ * (iPhone incluido) sin depender de breakpoints.
+ */
+export const tileFontSize = (value: number): string => {
+  if (value < 100) return 'clamp(1.35rem, 8vw, 2.2rem)';
+  if (value < 1000) return 'clamp(1.15rem, 6.6vw, 1.9rem)';
+  return 'clamp(0.95rem, 5.4vw, 1.6rem)';
+};

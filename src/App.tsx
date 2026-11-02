@@ -26,7 +26,7 @@ export default function App() {
   const openTutorial = () => goTo('tutorial');
 
   return (
-    <div className="min-h-screen bg-[#12141d] text-slate-100 flex flex-col justify-between font-sans relative overflow-x-hidden select-none">
+    <div className="min-h-screen min-h-dvh bg-[#12141d] text-slate-100 flex flex-col justify-between font-sans relative overflow-x-hidden select-none">
       <FloatingFlowers />
 
       {inGame ? (

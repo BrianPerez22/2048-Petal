@@ -8,12 +8,12 @@ export default function UndoDemo() {
   const [value, setValue] = useState(6);
 
   return (
-    <div className="w-full max-w-sm mx-auto bg-slate-950/60 border border-dashed border-amber-500/30 rounded-2xl p-4 flex flex-col gap-3">
-      <div className="flex items-center justify-between text-sm">
+    <div className="w-full max-w-md mx-auto bg-slate-950/60 border border-dashed border-amber-500/30 rounded-2xl p-4 sm:p-5 flex flex-col gap-4">
+      <div className="flex items-center justify-between text-base">
         <label htmlFor="undo-demo" className="text-slate-300 font-semibold">
           Max Deshacer:
         </label>
-        <span className="text-2xl font-black text-amber-300 tabular-nums">{value}</span>
+        <span className="text-3xl font-black text-amber-300 tabular-nums">{value}</span>
       </div>
 
       <input
@@ -23,21 +23,21 @@ export default function UndoDemo() {
         max={TOTAL}
         value={value}
         onChange={(e) => setValue(parseInt(e.target.value, 10))}
-        className="w-full accent-amber-400 cursor-pointer h-1.5"
+        className="w-full accent-amber-400 cursor-pointer h-2"
       />
 
       <div className="flex justify-between gap-1" aria-hidden="true">
         {Array.from({ length: TOTAL }).map((_, i) => (
           <DaisyPetalSVG
             key={i}
-            className={`w-6 h-6 text-amber-50 transition-all duration-200 ${
+            className={`w-6 h-6 sm:w-7 sm:h-7 text-amber-50 transition-all duration-200 ${
               i < value ? 'opacity-100 scale-100' : 'opacity-20 scale-75 grayscale'
             }`}
           />
         ))}
       </div>
 
-      <p className="text-[11px] text-slate-500 italic text-center">
+      <p className="text-xs sm:text-sm text-slate-400 italic text-center">
         Cada margarita encendida es un movimiento que podrás deshacer.
       </p>
     </div>
